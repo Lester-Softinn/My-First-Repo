@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head lang="en">
-  <meta charset="utf-8">
-  <title>Welcome!</title>
-
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-</head>
-
-<body>
-  <div class="container">
-      <h1>The BUTTON</h1>
-      <button id="toggleButton" class="btn toggle__button">Click Me!</button>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  <script>
-      const button = document.getElementById('toggleButton');
-      const body = document.body;
-      let isDarkMode = false;
-
-      button.addEventListener('click', () => {
-        isDarkMode = !isDarkMode;
-
-        body.classList.toggle('light-mode', !isDarkMode);
-        body.classList.toggle('dark-mode', isDarkMode);
-      });
-  </script>
-
-</body>
-
-</html>
+<!-- src/app/app.component.html -->
+<div>
+  <app-root></app-root>
+</div>
